@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tugas_randis
+        </title>
+    </head>
+    <body>
+        <h1>
+            Belajar DOM JS
+        </h1>
+     
+
+    <div id=" Box1"></div>
+    <div class="Boxes"></div>
+    <div class="Boxes"></div>
+    <div class="Boxes"></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        //--selektor--//
+        Document.getElementById('Box1').innerHTML="Sekolah koding";
+
+        var Boxes = document.getElementsByClassName('boxes');
+        Boxes[0].innerHTML="versi terbaru 1";
+        Boxes[1].innerHTML="versi sebelumnya 2";
+        Boxes[2].innerHTML="versi terlama 3"; 
+
+        var list = document.getElementsByTagName('li');
+        list[0].innerHTML='PHP';
+        list[1].innerHTML='SASS';
+        list[2].innerHTML='JQuery';
+
+        document.querySelectorAll('#box1')[0].innerHTML='koding123';
+        document.querySelectorAll('.boxes')[0].innerHTML='koding123';
+        document.querySelectorAll('ul div')[0].innerHTML='koding123';
+    </script>
+    </body>
+</html>

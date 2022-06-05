@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domjavaascript</title>
+<style>
+    .merah{background:red;}
+</style>
+</head>
+<body>
+    <h1>belajar DOM Javascript</h1>
+    <img src='astronot.pgn' width="300" id="gambar">
+    <input type='text' value="nama">
+
+    <script>
+        var img=document.getElementById('gambar');
+        img.width=400;
+
+       //img.setAttribute('class','merah');
+
+       var input =document.getElementById('input');
+       input.value="nama lengkap";
+    </script>
+
+
+    
+</body>
+</html>

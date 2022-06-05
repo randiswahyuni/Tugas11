@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar objek pada JS</title>
+</head>
+<body>
+    <h1>belajar DOM Javascript</h1>
+    <img src='astronot.pgn' width="300"> <br>
+
+
+    nama:<span id="nama"></span>
+    umur:<span id="umur"></span>
+    sifat:<span id="sifat"></span>
+
+    <script>
+        function pemain_bola(namaaa, umur){
+            this.nama= namaaa;
+            this.umur=umur;
+        }
+        pemain_bola.prototype.negara="belanda";
+
+        var ronaldo= new pemain_bola ('cristian ronaldo',35);
+        var messi= new pemain_bola('lionel messi',34);
+
+        document.getElementById(box).innerHTML=ronaldo.negara;
+    </script>
+</body>
+</html>

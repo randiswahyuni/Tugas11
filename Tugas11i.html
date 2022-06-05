@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar objek pada JS</title>
+</head>
+<body>
+    <h1>belajar DOM Javascript</h1>
+    <img src='astronot.pgn' width="300"> <br>
+
+
+    nama:<span id="nama"></span>
+    umur:<span id="umur"></span>
+    sifat:<span id="sifat"></span>
+
+    <script>
+        var program = {
+            nama: 'randis',
+            umur:19,
+            sifat: 'biasa saja',
+            getData:function(){
+                return "nama:"+ this.nama + " umur:".this.umur;
+            },
+            setData:function(nama){
+                this.nama= nama;
+            }
+        };
+
+        program.setData('wahyuni');
+        document.getElementById('box').innerHTML=program.getData();
+
+    </script>
+</body>
+</html>

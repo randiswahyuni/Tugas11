@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domjavaascript</title>
+<style>
+    .merah{background:red;}
+    .black{border: 2px solid blue;}
+</style>
+</head>
+<body onload="alert('sudah selesai!')">
+    <h1>belajar DOM Javascript</h1>
+    <img src='astronot.pgn' width="300" id="gambar" class="black">
+    <input type='text' value="nama">
+
+    <script>
+        var img=document.getElementById('gambar');
+        img.width=400;
+
+       //img.setAttribute('class','merah');
+
+       var input =document.getElementById('input');
+       input.value="nama lengkap";
+       input.style.border='3px solid blue';
+       input.style.backgroundColor = yellow;
+
+
+       function berubah(){
+           img.style.backgroundColor='yellow';
+       }
+       input.onclick=function(){
+           berubah()};
+           function berubah2(){
+               input.style.backgroundColor="green";
+           }
+
+        input.addEventListener('mouseleave', berubah2(){
+            input.style.backgroundColor="green";
+        });
+        input.addEventListener('mouseleave', function(){
+            input.style.backgroundColor="red";
+        });
+        var sudmit=document.getElementById('sudmit');
+        var span=document.getElementById('p1');
+
+        sudmit.onclick=function(){
+            var text=input.value;
+            span.innerHTML='text';
+        };
+    </script>
+
+
+    
+</body>
+</html>
